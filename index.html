@@ -1,0 +1,66 @@
+<!-- a linha abaixo define o tipo de documento-->
+<!DOCTYPE html>
+<!-- linguagem-->
+<html lang="en">
+<!-- cabeçalho, antes dos elementos-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Carrossel em bootstrap react</title>
+    <link href="./bootstrap.bundle.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./favicon.ico">
+
+</head>
+<body>
+    <div id="mydiv"></div>
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="react.development.js"></script>
+    <script src="popper.js"></script>
+    <script src="react-dom.development.js"></script>
+    <script src="babel.min.js"></script>
+    <script src="./react-router-dom.production.min.js"></script>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="text/babel"></script>
+
+    const varCarrossel = React.createRef ();
+    const var_Carrossel = (
+        <div
+            id={"varCarrossel"}
+
+            key={"varCarrossel"}
+
+            ref={varCarrossel}
+
+            className={"carousel slide"}
+        ></div>
+        <div>
+            className={"carousel-indicators"}
+        >
+           <button
+               type={"button"}
+               data-bs-target={"#varCarousel"}
+               data-bs-slide-to={"0"}
+               className={"active"}
+               aria-courent={"true"}
+               arial-label={"Slide 1 "}
+            ></button>
+            <button
+               type={"button"}
+               data-bs-target={"#varCarousel"}
+               data-bs-slide-to={"1"}
+               arial-label={"Slide 2 "}
+            ></button>
+            <button
+            type={"button"}
+            data-bs-target={"#varCarousel"}
+            data-bs-slide-to={"2"}
+            arial-label={"Slide 3 "}
+        </div>
+         ></button>
+
+      
+
+    )
+    
+</body>
+</html>
